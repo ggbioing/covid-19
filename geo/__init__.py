@@ -11,7 +11,7 @@ Requirements for plotting
 from pathlib import Path
 import geopandas as gpd
 import pandas as pd
-import folium
+# import folium
 
 MAP_DIR = Path(__file__).parent / 'map'
 
@@ -64,12 +64,12 @@ def find_place(coords):
 	return com_name, prov_name, reg_name
 
 
-def plot_gdf_folium(gdf):
-	bo = gdf.total_bounds
-	center = (bo[1] + bo[3])/2, (bo[0] + bo[2])/2
-	m = folium.Map(center, zoom_start=10, tiles='OpenStreetMap')
-	folium.GeoJson(gdf).add_to(m)
-	return m
+# def plot_gdf_folium(gdf):
+# 	bo = gdf.total_bounds
+# 	center = (bo[1] + bo[3])/2, (bo[0] + bo[2])/2
+# 	m = folium.Map(center, zoom_start=10, tiles='OpenStreetMap')
+# 	folium.GeoJson(gdf).add_to(m)
+# 	return m
 
 
 __all__ = [
@@ -77,5 +77,5 @@ __all__ = [
 	'PROV',
 	'REG',
 	'find_place',
-	'plot_gdf_folium',
+	# 'plot_gdf_folium',
 ]
