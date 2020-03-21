@@ -7,6 +7,7 @@ Requirements for plotting
 		conda install -c conda-forge cartopy
 		conda install -c conda-forge proj
 		conda install folium -c conda-forge
+		conda install -c conda-forge mapclassify  # for quantile plot etc.
 """
 from pathlib import Path
 import geopandas as gpd
