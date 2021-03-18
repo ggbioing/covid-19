@@ -1,0 +1,12 @@
+name: covid19
+channels:
+- conda-forge # geopandas
+- defaults
+dependencies:
+- python
+- ipython
+- jupyter
+- numpy
+- matplotlib
+- pandas
+- geopandas
