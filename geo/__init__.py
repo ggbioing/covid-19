@@ -45,7 +45,7 @@ PROV = gpd.read_file(MAP_DIR / 'it/province.geojson')
 PROV['prov_name'] = PROV['prov_name'].str.lower().map(Mapper(ter_dict, invert=True))
 PROV['reg_name'] = PROV['reg_name'].str.lower().map(Mapper(ter_dict, invert=True))
 
-REG = PROV[['reg_name', 'geometry']].dissolve('reg_name').reset_index()
+REG = PROV[['reg_name', 'geometry', 'reg_istat_code_num']].dissolve('reg_name').reset_index()
 
 """ISTAT"""
 DEMOG = pd.read_csv(MAP_DIR / '../../istat/demog.csv').rename(mapper={'Territorio': 'prov_name', 'Value': 'population'}, axis=1)
