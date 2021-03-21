@@ -17,6 +17,13 @@ Per ottenere i dati sull'incidenza si incrociano opportunamente i dati sui conta
 <img src="./fig/nuovi_casi_100k.png">
 
 ## Andamento Per Provincia
-In scala normale e logaritmica nell'ultimo mese
+Nuovi casi e Incidenza nell'ultimo mese.
 
 <img src="./fig/prov.png">
+<img src="./fig/prov_inc.png">
+
+## Andamento Per Regioni
+Incidenza e Occupazione Terapie Intensive nell'ultimo mese.
+
+<img src="./fig/reg_inc.png">
+<img src="./fig/ti.png">
